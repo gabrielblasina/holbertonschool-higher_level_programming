@@ -18,4 +18,4 @@ elif (last_number < 6 and last_number != 0):
     if (number < 0):
         print(f"-{last_number} and is less than 6 and not 0")
 else:
-    print(f"{last_number} and is 0")   
+    print(f"{last_number} and is 0")
