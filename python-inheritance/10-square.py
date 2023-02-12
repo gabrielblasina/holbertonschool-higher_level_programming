@@ -15,13 +15,15 @@ class Square(Rectangle):
         Args:
             size: (private attribute) size of square
         """
-        super().__init__(size, size)
         self.integer_validator('size', size)
         self.__size = size
+        super().__init__(size, size)
+        self.__width = size
+        self.__height = size
 
     def area(self):
         """area method
         Return:
             area of square
         """
-        return (self.__size ** 2)
+        return (self.__width ** 2)
