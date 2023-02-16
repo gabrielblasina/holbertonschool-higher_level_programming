@@ -18,7 +18,87 @@ class Rectangle(Base):
             id: Public instance attribute
         """
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
+
+    @property
+    def width(self):
+        """
+        private instance method
+        Note:
+            returns the width
+        """
+        return (self.__width)
+
+    @width.setter
+    def width(self, value):
+        """
+        private instance method
+        Note:
+            value validation
+        Args:
+            value: private instance height's attribute
+        """
+        self.__width = value
+
+    @property
+    def height(self):
+        """
+        private instance method
+        Note:
+            returns the height
+        """
+        return (self.__height)
+
+    @height.setter
+    def width(self, value):
+        """
+        private instance method
+        Note:
+            value validation
+        Args:
+            value: private instance width's attribute
+        """
+        self.__width = value
+
+    @property
+    def x(self):
+        """
+        private instance method
+        Note:
+            returns the x
+        """
+        return (self.__x)
+
+    @x.setter
+    def x(self, value):
+        """
+        private instance method
+        Note:
+            value validation
+        Args:
+            value: private instance x's attribute
+        """
+        self.__x = value
+
+    @property
+    def y(self):
+        """
+        private instance method
+        Note:
+            returns the y
+        """
+        return (self.__y)
+
+    @y.setter
+    def y(self, value):
+        """
+        private instance method
+        Note:
+            value validation
+        Args:
+            value: private instance y's attribute
+        """
+        self.__y = value
