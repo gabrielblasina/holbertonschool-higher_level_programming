@@ -53,7 +53,7 @@ class Rectangle(Base):
         return (self.__height)
 
     @height.setter
-    def width(self, value):
+    def height(self, value):
         """
         private instance method
         Note:
@@ -61,7 +61,7 @@ class Rectangle(Base):
         Args:
             value: private instance width's attribute
         """
-        self.__width = value
+        self.__height = value
 
     @property
     def x(self):
