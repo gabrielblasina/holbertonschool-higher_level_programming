@@ -128,5 +128,16 @@ class Rectangle(Base):
 
     def display(self):
         """Function to display de rectangle"""
-        for i in range(self.height):
-            print("#" * self.width)
+        for j in range(self.__y):
+            print()
+        for i in range(self.__height):
+            print(" " * self.__x, end="")
+            print("#" * self.__width)
+
+    def __str__(self):
+        """string representation of a string
+        Return:
+            the string representation of an object
+        """
+        return (f"[Rectangle] ({self.__id}) {self.__x}/{self.__y} "
+                f"- {self.__width}/{self.__height}")
