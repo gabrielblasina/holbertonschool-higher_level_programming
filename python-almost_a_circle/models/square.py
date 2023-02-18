@@ -18,6 +18,31 @@ class Square(Rectangle):
         """
         super().__init__(size, size, x, y, id)
 
+    @property
+    def size(self):
+        """public instance method
+        Returns:
+            width
+        """
+        return (self.width)
+
+    @property
+    def size(self):
+        """public instance method
+        Returns:
+            height
+        """
+        return (self.height)
+
+    @size.setter
+    def size(self, value):
+        """public instance method
+        Args:
+            value: value to be set
+        """
+        self.width = value
+        self. height = value
+
     def __str__(self):
         """string representation of an object
         Return:
