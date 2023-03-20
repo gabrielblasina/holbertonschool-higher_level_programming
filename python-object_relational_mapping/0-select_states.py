@@ -17,3 +17,6 @@ if __name__ == '__main__':
     show_rows = cur.fetchall()
     for row in show_rows:
         print(row)
+
+    cur.close()
+    db.close()
