@@ -5,4 +5,4 @@ def square_matrix_simple(matrix=[]):
     for rows in matrix:
         new_matrix1 = list(map(lambda value: value ** 2, rows))
         new_matrix2.append(new_matrix1)
-    return (new_matrix2)
+    return new_matrix2
